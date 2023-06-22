@@ -12,7 +12,7 @@ namespace TestProject1
         }
 
         [Test]
-        public void TestFor20KM()
+        public void KørselsFradagVed20KmTest()
         {
             //Arange
             double kms = 20;
@@ -42,7 +42,7 @@ namespace TestProject1
             Assert.AreEqual(result, 6.5);
         }
         [Test]
-        public void TestFor100KM()
+        public void KørselsFradagVed100KmTest()
         {
             //Arange
             double kms = 100;
@@ -57,7 +57,7 @@ namespace TestProject1
             Assert.AreEqual(result, 26);
         }
         [Test]
-        public void TestFor120KM()
+        public void KørselsFradagVed120KmTest()
         {
             //Arange
             double kms = 120;
@@ -73,7 +73,7 @@ namespace TestProject1
         }
 
         [Test]
-        public void TestFor200KM()
+        public void KørselsFradagVed200KmTest()
         {
             //Arange
             double kms = 200;
@@ -92,22 +92,6 @@ namespace TestProject1
 
 
         //OLD
-
-        [Test]
-        public void TestingOfNormalValue()
-        {
-            //Arange
-            double kms = 124;
-
-            BefordringClass befordring = new BefordringClass(kms);
-
-            //Act
-            double result = befordring.ReturnMath();
-
-
-            // Assert
-            Assert.AreEqual(result, 53.5600);
-        }
 
         [Test]
         public void TestingIfBridgeWorks()
