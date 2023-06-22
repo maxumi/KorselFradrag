@@ -9,8 +9,8 @@ namespace Befordring
     public class BefordringClass
     {
         private const double IkkeBetaltKm = 24;
-        private const double KrPerKm = 2.1;
-        private const double KrPerKmOver120 = 1.1;
+        private const double KrPerKm = 2.19;
+        private const double KrPerKmOver120 = 1.10;
         private const double Procent = 0.26;
         private readonly double _kms;
 
@@ -26,11 +26,11 @@ namespace Befordring
             }
             else if ( _kms >= 25 && _kms <= 120)
             {
-                double kms = 0;
+                double kms = _kms;
 
                 kms -= IkkeBetaltKm;
-                kms = _kms * KrPerKm;
-                kms = _kms * Procent;
+                kms = kms * KrPerKm;
+                kms = kms * Procent;
 
                 return Math.Round(kms, 4);
             }

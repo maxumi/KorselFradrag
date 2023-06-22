@@ -39,7 +39,7 @@ namespace TestProject1
 
 
             // Assert
-            Assert.AreEqual(result, 6.5);
+            Assert.AreEqual(result, 0.5694);
         }
         [Test]
         public void KørselsFradagVed100KmTest()
@@ -54,7 +54,7 @@ namespace TestProject1
 
 
             // Assert
-            Assert.AreEqual(result, 26);
+            Assert.AreEqual(result, 43.2744);
         }
         [Test]
         public void KørselsFradagVed120KmTest()
@@ -69,7 +69,7 @@ namespace TestProject1
 
 
             // Assert
-            Assert.AreEqual(result, 31.2);
+            Assert.AreEqual(result, 54.6624);
         }
 
         [Test]
@@ -85,7 +85,7 @@ namespace TestProject1
 
 
             // Assert
-            Assert.AreEqual(result, 75.296);
+            Assert.AreEqual(result, 77.5424);
         }
 
 
@@ -106,7 +106,7 @@ namespace TestProject1
             double result2 = befordring.ReturnQA(answer);
 
             // Assert
-            Assert.AreEqual(result2, 163.56);
+            Assert.AreEqual(result2, 165.8064);
         }
         [Test]
         public void TestingForEachDay()
@@ -122,7 +122,7 @@ namespace TestProject1
             double result2 = befordring.ReturnQA(answer) * day;
 
             // Assert
-            Assert.AreEqual(result2, 817.8);
+            Assert.AreEqual(result2, 829.0319);
         }
     }
 }
