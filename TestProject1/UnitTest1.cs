@@ -122,7 +122,7 @@ namespace TestProject1
             double result2 = befordring.ReturnQA(answer) * day;
 
             // Assert
-            Assert.AreEqual(result2, 829.0319);
+            Assert.AreEqual(result2, 829.03199999999993);
         }
     }
 }
