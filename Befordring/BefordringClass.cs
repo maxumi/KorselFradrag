@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Befordring
+namespace Befordring 
 {
-    public class BefordringClass
+    public class BefordringClass : AbstractKorselsFradrag
     {
         private const double IkkeBetaltKm = 24;
         private const double KrPerKm = 2.19;
@@ -14,11 +14,11 @@ namespace Befordring
         private const double Procent = 0.26;
         private readonly double _kms;
 
-        public BefordringClass(double Kms)
+        public BefordringClass(double Kms) : base(Kms)
         {
             _kms = Kms;
         }
-        public double ReturnMath()
+        override public double ReturnMath()
         {
             if ( _kms <= 24)
             {
@@ -46,7 +46,7 @@ namespace Befordring
                 return 0;
             }
         }
-        public double ReturnQA(int Anwsr)
+        override public double ReturnQA(int Anwsr)
         {
             double fraDrag = ReturnMath();
             switch (Anwsr)
