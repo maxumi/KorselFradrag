@@ -18,7 +18,7 @@ namespace Befordring
         {
             _kms = Kms;
         }
-        override public double ReturnMath()
+        public override double ReturnMath()
         {
             if ( _kms <= 24)
             {
@@ -46,7 +46,7 @@ namespace Befordring
                 return 0;
             }
         }
-        override public double ReturnQA(int Anwsr)
+         public override double ReturnQA(int Anwsr)
         {
             double fraDrag = ReturnMath();
             switch (Anwsr)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Befordring
 {
-    public class AbstractKorselsFradrag
+    public abstract class AbstractKorselsFradrag
     {
         private const double IkkeBetaltKm = 24;
         private const double KrPerKm = 2.19;
@@ -18,11 +18,8 @@ namespace Befordring
         {
             _kms = Kms;
         }
-        virtual public double ReturnMath()
-        {
-            return 0;
-        }
-        virtual public double ReturnQA(int Anwsr)
+        public abstract double ReturnMath();
+         public virtual double ReturnQA(int Anwsr)
         {
             return 0;
         }
